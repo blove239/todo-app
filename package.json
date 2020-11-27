@@ -1,0 +1,27 @@
+{
+  "name": "todo-app",
+  "version": "1.0.0",
+  "description": "Cloud based todo application with notifications",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "build": "babel src -d lib",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blove239/todo-app.git"
+  },
+  "author": "BEAN",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blove239/todo-app/issues"
+  },
+  "homepage": "https://github.com/blove239/todo-app#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.12.8",
+    "@babel/core": "^7.12.9"
+  }
+}
