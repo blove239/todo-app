@@ -1,0 +1,18 @@
+{
+    "toDos": [
+        {
+            "noteName": "Groceries",
+            "noteDate": 1598788800,
+            "notifications": [
+                1598988800,
+                1594488800,
+                1599988800
+            ]
+        },
+        {
+            "noteName": "Watch shark week",
+            "noteDate": "20201010",
+            "notifications": []
+        }
+    ]
+}
