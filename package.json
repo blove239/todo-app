@@ -25,7 +25,10 @@
     "@babel/core": "^7.12.9"
   },
   "dependencies": {
+<<<<<<< HEAD
     "cors": "^2.8.5",
+=======
+>>>>>>> main
     "express": "^4.17.1"
   }
 }
