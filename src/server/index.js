@@ -3,12 +3,7 @@ const app = express();
 const cors = require('cors');
 const port = 3000;
 
-const corsOptions = {
-  origin: '*',
-  optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
-};
-
-app.get('/example.json', cors(corsOptions), (req, res, next) => {
+app.get('/example.json', (req, res, next) => {
     // Website you wish to allow to connect
     res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
 
