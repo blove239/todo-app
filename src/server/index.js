@@ -9,7 +9,6 @@ const corsOptions = {
 };
 
 app.get('/example.json', cors(corsOptions), (req, res, next) => {
-    console.log("hi");
     // Website you wish to allow to connect
     res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
 
@@ -18,13 +17,24 @@ app.get('/example.json', cors(corsOptions), (req, res, next) => {
 
     // Request headers you wish to allow
     res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
-
-    res.sendFile('./examples/exampleNote.json');
+    res.send('{"toDos": [\
+        {\
+            "noteName": "Groceries",\
+            "noteDate": 1598788800,\
+            "notifications": [\
+                1598988800,\
+                1594488800,\
+                1599988800\
+            ]\
+        },\
+        {\
+            "noteName": "Watch shark week",\
+            "noteDate": "20201010",\
+            "notifications": []\
+        }\
+    ]}');
 });
 
-app.get('/', (req, res) => {
-    res.sendFile('index.html');
-});
 
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`);
